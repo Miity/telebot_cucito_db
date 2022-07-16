@@ -65,7 +65,7 @@ def select_all_users() -> list:
     sess.close()
     return users
 
-def select_all_clients()  -> list[Client]:
+def select_all_clients():
     sess = session()
     clients = sess.query(Client).all()
     sess.close()
